@@ -384,6 +384,8 @@ img { display: block; max-width: 100%; height: auto; }
   margin: 0;
 }
 
+
+
 .portfolio-thumb {
   position: relative;
   overflow: hidden;
@@ -484,6 +486,7 @@ img { display: block; max-width: 100%; height: auto; }
 .footer-logo-span {
   color: #f4f4fd;
 }
+
 
 /* ===== Четверта секція (портфоліо / проєкти) ===== */
 .portfolio {
@@ -851,7 +854,7 @@ img {
 
 /* MOBILE MENU */
 .mobile-menu {
-  position: fixed;
+  position: flex;
   top: 0;
   left: 0;
   width: 100%;
