@@ -99,7 +99,7 @@ button {
   padding: 24px 0;
 }
 
-.header-logo {
+.logo {
   padding: 16px 0;
   display: block;
 }
@@ -125,7 +125,7 @@ button {
     display: none;
   }
 
-.header-logo {
+.logo {
   padding: 24px 0;
   margin-right: 124px;
 }
@@ -194,7 +194,7 @@ button {
 
 
 @media screen and (min-width: 1158px) {
-  .header-logo {
+  .logo {
     margin-right: 76px;
   }
   .contact-list {
@@ -294,7 +294,7 @@ button {
   }
 
  .hero {
-  padding: 112px 0;
+  padding: 72px 0;
   background-image:
     linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -319,6 +319,7 @@ button {
     max-width: 588px;
     margin: 0 auto 56px;
     font-size: 44px;
+    line-height: 1.09;
   }
   .hero-btn {
     padding: 18px 40px;
@@ -338,6 +339,7 @@ button {
     max-width: 761px;
     margin: 0 auto 64px;
     font-size: 64px;
+    line-height: 1.06;
   }
   .hero-btn {
     padding: 18px 44px;
@@ -347,6 +349,7 @@ button {
  .hero-title { 
   color: #ffffff; 
   font-size: 36px; 
+  line-height: 1.11;
   max-width: 320px; 
   margin: 0 auto 48px; 
   text-align: center;
@@ -357,12 +360,27 @@ button {
   border: none; 
   border-radius: 4px; 
   padding: 16px 32px; 
-  bottom: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 /* ========== ADVANTAGES ========== */
+.advantages {
+  padding: 96px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding: 120px 0;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .advantages {
+    padding: 120px 0;
+  }
+}
+
 .adv-list {
   display: flex;
   flex-direction: column;
@@ -412,10 +430,22 @@ button {
     border-radius: 4px;
     margin-bottom: 8px;
   }
-}
 /* ========== TEAM ========== */
 .team {
+  padding: 96px 0;
   background-color: #f4f4fd;
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    padding: 120px 0;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .team {
+    padding: 120px 0;
+  }
 }
 
 .team-item img {
@@ -482,6 +512,22 @@ button {
   fill: #f4f4fd;
 }
 /* ========== PORTFOLIO ========== */
+.portfolio {
+  padding: 96px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    padding: 120px 0;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .portfolio {
+    padding: 120px 0;
+  }
+}
+
 .portfolio-list {
   display: flex;
   flex-direction: column;
@@ -562,22 +608,30 @@ button {
 }
 @media screen and (min-width: 768px) {
   .footer-container {
-    display: flex;
+    flex-direction: column;
     gap: 72px;
-    align-items: flex-start;
   }
 
-  .footer-left,
-  .footer-right {
+  .footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .footer-social {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
   }
 
   .sub-form {
     display: flex;
     flex-direction: row;
     gap: 24px;
+  }
+}
   }
 
   .footer-social {
@@ -598,21 +652,6 @@ button {
     max-width: 500px;
     text-align: center;
   }
-
-  .footer-text-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-  }
-}
-
-/* ОКРЕМО */
-@media (max-width: 768px) {
-  .footer-text-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 }
 .footer {
   background-color: #2e2f42;
@@ -625,9 +664,34 @@ button {
   gap: 72px;
 }
 
-.footer-text {
-  color: #f4f4fd;
-  max-width: 264px;
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-social-text {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.footer .social-list {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+}
 
 }
 
@@ -667,13 +731,6 @@ button {
   color: #f4f4fd;
   border: none;
   border-radius: 8px;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 72px;
 }
 
 .footer-info {
@@ -737,11 +794,17 @@ button {
     gap: 80px;
     align-items: flex-start;
   }
-}
+
+  .footer-info {
+    flex-direction: column;
+    gap: 16px;
+  }
+
   .sub-form {
     flex-direction: row;
     gap: 24px;
   }
+}
 
 .backdrop {
   position: fixed;
@@ -750,9 +813,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.backdrop.hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -765,8 +826,9 @@ button {
 }
 
 .modal {
-  width: 408px;
-  padding: 24px;
+  position: relative;
+  width: min(288px, calc(100% - 32px));
+  padding: 20px;
   background-color: #fcfcfc;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(46, 47, 66, 0.1),
@@ -774,10 +836,18 @@ button {
               0px 16px 24px rgba(46, 47, 66, 0.1);
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    padding: 24px 36px;
+  }
+}
 
-.modal {
-  position: relative;
-  width: 408px;
+@media screen and (min-width: 1158px) {
+  .modal {
+    width: 480px;
+    padding: 32px 48px;
+  }
 }
 
 .modal-close {

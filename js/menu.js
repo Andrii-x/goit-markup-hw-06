@@ -18,13 +18,11 @@ const modalCloseBtn = document.querySelector('[data-modal-close]');
 
 if (backdrop && modalOpenBtn && modalCloseBtn) {
   const openModal = () => {
-    backdrop.classList.remove('hidden');
     backdrop.classList.add('is-open');
   };
 
   const closeModal = () => {
     backdrop.classList.remove('is-open');
-    backdrop.classList.add('hidden');
   };
 
   modalOpenBtn.addEventListener('click', openModal);
