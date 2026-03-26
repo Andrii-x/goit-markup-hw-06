@@ -383,9 +383,7 @@ button {
 }
 @media screen and (min-width: 1158px) {
   .hero {
-    padding: 104px 0;
-    max-width: 1000px;
-    margin: 0 auto;
+    padding: 200px 0;
     background-image:
       linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -460,8 +458,8 @@ button {
 
 .adv-title {
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
+  margin-bottom: 8px;
+  font-size: 28px;
   line-height: 1.2;
   font-weight: 700;
 }
