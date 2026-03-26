@@ -173,13 +173,13 @@ img {
     display: block;
  }
 
- .contactc-list {
+ .contact-list {
     display: flex;
     flex-direction: column;
     gap: 12px;
  }
 
- .contactc-link {
+ .contact-link {
     display: block;
     line-height: 1.17;
     font-size: 12px;
@@ -199,12 +199,12 @@ img {
   .header-logo {
     margin-right: 76px;
   }
-  .contactc-list {
+  .contact-list {
     align-items: center;
     flex-direction: row;
     gap: 40px;
  }
- .contactc-link {
+ .contact-link {
   padding: 24px 0;
     line-height: 1.5;
     font-size: 16px;
