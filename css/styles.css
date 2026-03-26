@@ -277,15 +277,16 @@ button {
 }
 
 .mobile-menu-phone {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 500;
   color: #4d5ae5;
   display: block;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .mobile-menu-mail {
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 400;
   color: #434455;
 }
 
@@ -325,7 +326,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 112px 0;
+    padding: 160px 0;
     background-image:
       linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -334,13 +335,36 @@ button {
       url("../images/hero/hero-tablet.jpg");
   }
   .hero-title {
-    max-width: 496px;
-    margin: 0 auto 36px;
+    max-width: 500px;
+    margin: 0 auto 40px;
     font-size: 56px;
-    line-height: 1.07;
+    line-height: 1.08;
   }
   .hero-btn {
     padding: 16px 32px;
+  }
+}
+
+.section-title {
+  margin: 0 0 24px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section-title {
+    font-size: 44px;
+    margin-bottom: 32px;
+    text-align: left;
   }
 }
 
@@ -356,8 +380,8 @@ button {
 }
 @media screen and (min-width: 1158px) {
   .hero {
-    padding: 104px 0;
-    max-width: 1440px;
+    padding: 200px 0;
+    max-width: 1200px;
     margin: 0 auto;
     background-image:
       linear-gradient(
@@ -367,10 +391,10 @@ button {
       url("../images/hero/hero-desktop.jpg");
   }
   .hero-title {
-    max-width: 696px;
+    max-width: 620px;
     margin: 0 auto 48px;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 64px;
+    line-height: 1.05;
   }
   .hero-btn {
     padding: 16px 32px;
@@ -392,8 +416,8 @@ button {
   color: #ffffff; 
   font-size: 36px; 
   line-height: 1.11;
-  max-width: 320px; 
-  margin: 0 auto 72px; 
+  max-width: 280px; 
+  margin: 0 auto 48px; 
   text-align: center;
 } 
 .hero-btn { 
@@ -433,11 +457,41 @@ button {
 
 .adv-title {
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
 }
 
 .adv-text {
   text-align: left;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #434455;
+}
+
+@media screen and (min-width: 768px) {
+  .adv-title {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .adv-text {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .adv-title {
+    text-align: left;
+    font-size: 24px;
+  }
+
+  .adv-text {
+    text-align: left;
+    font-size: 16px;
+  }
 }
 
 .adv-icon-container {
@@ -612,6 +666,10 @@ button {
 
 /* desktop */
 @media screen and (min-width: 1158px) {
+  .portfolio-list {
+    gap: 48px 24px;
+  }
+
   .portfolio-item {
     width: calc((100% - 48px) / 3);
     box-shadow: none;
@@ -679,28 +737,55 @@ button {
 @media screen and (min-width: 768px) {
   .footer-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 72px;
+    gap: 24px;
   }
 
-  .footer-info {
-    flex: 1;
-  }
-
+  .footer-info,
   .footer-social {
-    flex: 1;
+    flex: 1 1 calc(50% - 12px);
+    min-width: 280px;
+  }
+
+  .sub-box {
+    flex: 1 1 100%;
+  }
+
+  .footer-text {
+    max-width: 380px;
   }
 
   .sub-form {
-    flex: 1 1 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
   }
 }
 
-  .footer-text {
-    max-width: 500px;
-    text-align: left;
+@media screen and (min-width: 1158px) {
+  .footer-container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 40px;
   }
+
+  .footer-info {
+    flex: 0 0 42%;
+  }
+
+  .footer-social {
+    flex: 0 0 28%;
+  }
+
+  .sub-box {
+    flex: 0 0 30%;
+  }
+
+  .footer-text {
+    max-width: 360px;
+  }
+}
 
 
 .footer {
@@ -879,12 +964,23 @@ button {
 .modal {
   position: relative;
   width: min(288px, calc(100% - 32px));
-  padding: 20px 16px;
+  padding: 16px;
   background-color: #fcfcfc;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(46, 47, 66, 0.1),
               0px 8px 16px rgba(46, 47, 66, 0.1),
               0px 16px 24px rgba(46, 47, 66, 0.1);
+}@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    padding: 24px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .modal {
+    width: 408px;
+    padding: 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
