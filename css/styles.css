@@ -99,15 +99,22 @@ button {
   padding: 24px 0;
 }
 
+.logo-web {
+  color: #4d5ae5;
+}
+
+.logo-studio {
+  color: #ff6b0a;
+}
+
 .logo {
   padding: 16px 0;
   display: block;
   color: #4d5ae5;
 }
 
-.logo-span,
-.footer-logo-span {
-  color: #ffffff;
+.logo-span {
+  color: #ff6b0a;
 }
 
 .burger-btn {
@@ -233,8 +240,7 @@ button {
 
   .mobile-menu-container {
     position: relative;
-    padding-top: 72px;
-    padding-bottom: 48px;
+    padding: 72px 16px 48px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -319,7 +325,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 160px 0;
+    padding: 112px 0;
     background-image:
       linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -328,24 +334,13 @@ button {
       url("../images/hero/hero-tablet.jpg");
   }
   .hero-title {
-    max-width: 400px;
+    max-width: 496px;
     margin: 0 auto 36px;
-    font-size: 48px;
+    font-size: 56px;
     line-height: 1.07;
   }
   .hero-btn {
     padding: 16px 32px;
-  }
-}
-
-@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi) {
-  .hero {
-    background-image:
-      linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/hero/hero-tablet@2x.jpg");
   }
 }
 
@@ -361,7 +356,9 @@ button {
 }
 @media screen and (min-width: 1158px) {
   .hero {
-    padding: 200px 0;
+    padding: 104px 0;
+    max-width: 1440px;
+    margin: 0 auto;
     background-image:
       linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -370,24 +367,13 @@ button {
       url("../images/hero/hero-desktop.jpg");
   }
   .hero-title {
-    max-width: 800px;
+    max-width: 696px;
     margin: 0 auto 48px;
-    font-size: 64px;
+    font-size: 56px;
     line-height: 1.07;
   }
   .hero-btn {
     padding: 16px 32px;
-  }
-}
-
-@media screen and (min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1158px) and (min-resolution: 192dpi) {
-  .hero {
-    background-image:
-      linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/hero/hero-desktop@2x.jpg");
   }
 }
 
@@ -407,7 +393,7 @@ button {
   font-size: 36px; 
   line-height: 1.11;
   max-width: 320px; 
-  margin: 0 auto 100px; 
+  margin: 0 auto 72px; 
   text-align: center;
 } 
 .hero-btn { 
@@ -446,7 +432,7 @@ button {
 
 
 .adv-title {
-  text-align: left;
+  text-align: center;
   margin-bottom: 8px;
 }
 
@@ -488,11 +474,11 @@ button {
   }
 
   .adv-title {
-    text-align: center;
+    text-align: left;
   }
 
   .adv-text {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -500,6 +486,11 @@ button {
 .team {
   padding: 96px 0;
   background-color: #f4f4fd;
+}
+
+.team-item {
+  width: 264px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -537,14 +528,14 @@ button {
   }
 
   .team-item {
-    width: calc((100% - 24px) / 2);
+    width: 264px;
   }
 }
 
 /* desktop */
 @media screen and (min-width: 1158px) {
   .team-item {
-    width: calc((100% - 72px) / 4);
+    width: 264px;
   }
 }
 
@@ -687,28 +678,22 @@ button {
 }
 @media screen and (min-width: 768px) {
   .footer-container {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 72px;
   }
 
   .footer-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
+    flex: 1;
   }
 
   .footer-social {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    flex: 1;
   }
 
   .sub-form {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
+    flex: 1 1 100%;
   }
 }
 
@@ -856,8 +841,8 @@ button {
 /* desktop */
 @media screen and (min-width: 1158px) {
   .footer-container {
-    flex-direction: row;
-    gap: 80px;
+    display: flex;
+    justify-content: space-between;
     align-items: flex-start;
   }
 
@@ -894,7 +879,7 @@ button {
 .modal {
   position: relative;
   width: min(288px, calc(100% - 32px));
-  padding: 20px;
+  padding: 20px 16px;
   background-color: #fcfcfc;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(46, 47, 66, 0.1),
