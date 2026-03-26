@@ -1,14 +1,12 @@
-.hidden {
-    display: none;
-}
 
-.body {
+
+body {
  font-family: "Roboto", sans-serif;
   margin: 0;
   color: #434455;
 }
 
-.ul,
+ul,
 ol {
   list-style-type: none;
   margin: 0;
@@ -24,18 +22,18 @@ p {
     margin: 0px;
 }
 
-.a {
+a {
    text-decoration: none;
   color: inherit;
 }
 
-.img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-.button {
+button {
     cursor: pointer;
 }
 
@@ -173,13 +171,13 @@ p {
     display: block;
  }
 
- .contactc-list {
+ .contact-list {
     display: flex;
     flex-direction: column;
     gap: 12px;
  }
 
- .contactc-link {
+ .contact-link {
     display: block;
     line-height: 1.17;
     font-size: 12px;
@@ -199,12 +197,12 @@ p {
   .header-logo {
     margin-right: 76px;
   }
-  .contactc-list {
+  .contact-list {
     align-items: center;
     flex-direction: row;
     gap: 40px;
  }
- .contactc-link {
+ .contact-link {
   padding: 24px 0;
     line-height: 1.5;
     font-size: 16px;
@@ -309,6 +307,7 @@ p {
 }
 @media screen and (min-width: 768px) {
   .hero {
+    padding: 160px 0;
     background-image:
       linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -316,15 +315,32 @@ p {
       ),
       url("../images/hero/hero-tablet.jpg");
   }
+  .hero-title {
+    max-width: 588px;
+    margin: 0 auto 56px;
+    font-size: 44px;
+  }
+  .hero-btn {
+    padding: 18px 40px;
+  }
 }
 @media screen and (min-width: 1158px) {
   .hero {
+    padding: 200px 0;
     background-image:
       linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/hero/hero-desktop.jpg");
+  }
+  .hero-title {
+    max-width: 761px;
+    margin: 0 auto 64px;
+    font-size: 64px;
+  }
+  .hero-btn {
+    padding: 18px 44px;
   }
 }
 
@@ -761,7 +777,7 @@ p {
 
 .modal {
   position: relative;
-   
+  width: 408px;
 }
 
 .modal-close {
