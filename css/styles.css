@@ -257,6 +257,7 @@ button {
   }
   .mobile-menu-contacts {
     margin-top: auto;
+    margin-bottom: 48px;
   }
 /* ===== MOBILE MENU CONTENT ===== */
 .mobile-menu-list {
@@ -311,6 +312,8 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -463,9 +466,9 @@ button {
 .adv-text {
   text-align: left;
   font-size: 16px;
-  line-height: 1.75;
-  font-weight: 500;
-  color: #2e2f42;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #434455;
 }
 
 @media screen and (min-width: 768px) {
@@ -731,7 +734,38 @@ button {
 .portfolio-item:hover .portfolio-overlay {
   transform: translateY(0);
 }
+.footer {
+  background-color: #2e2f42;
+  padding: 96px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
 @media screen and (min-width: 768px) {
+  .footer {
+    padding: 96px 0;
+  }
+
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -754,8 +788,6 @@ button {
 
   .footer-text {
     max-width: 380px;
-    color: #ffffff;
-    opacity: 1;
   }
 
   .sub-form {
@@ -800,38 +832,12 @@ button {
   }
 }
 
-
-.footer {
-  background-color: #2e2f42;
-  padding: 96px 0;
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
-  align-items: center;
-  text-align: center;
-}
-
-.footer-info {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
-}
-
-.footer-social {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
-}
-
 .footer-text {
   margin: 0;
   color: #ffffff;
   opacity: 1;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .footer-social-text {
@@ -897,10 +903,6 @@ button {
   color: #f4f4fd;
   border: none;
   border-radius: 8px;
-}
-
-.footer-info {
-  max-width: 520px;
 }
 
 .footer-text-row {
