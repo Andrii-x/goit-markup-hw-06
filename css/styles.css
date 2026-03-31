@@ -323,8 +323,11 @@ button {
 .hero-title {
   max-width: 260px;
   margin: 0 auto 56px;
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
 }
-
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero {
@@ -347,7 +350,7 @@ button {
       url("../images/hero/hero-tablet.jpg");
   }
   .hero-title {
-    max-width: 480px;
+    max-width: 440px;
     margin: 0 auto 40px;
     font-size: 56px;
     line-height: 1.08;
@@ -374,6 +377,17 @@ button {
   .section-title {
     font-size: 40px;
     margin-bottom: 60px;
+  }
+  .team .section-title,
+  .portfolio .section-title {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .team .section-title,
+  .portfolio .section-title {
+    margin-bottom: 48px;
   }
 }
 
@@ -406,7 +420,7 @@ button {
       url("../images/hero/hero-desktop.jpg");
   }
   .hero-title {
-    max-width: 560px;
+    max-width: 520px;
     margin: 0 auto 50px;
     font-size: 56px;
     line-height: 1.08;
@@ -427,14 +441,6 @@ button {
   }
 }
 
-.hero-title { 
-  color: #ffffff; 
-  font-size: 36px; 
-  line-height: 1.11;
-  max-width: 240px; 
-  margin: 0 auto 56px; 
-  text-align: center;
-} 
 .hero-btn { 
   background-color: #4d5ae5; 
   color: #ffffff; 
