@@ -281,7 +281,7 @@ button {
   font-weight: 500;
   color: #4d5ae5;
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 
 .mobile-menu-mail {
@@ -296,7 +296,7 @@ button {
 }
 
 .mobile-menu-social {
-  margin-top: 28px;
+  margin-top: 32px;
 }
 
 .mobile-menu-social {
@@ -321,7 +321,7 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1158px;
+  max-width: 1440px;
   margin: 0 auto;
   position: relative;
 }
@@ -390,28 +390,26 @@ button {
 
 .team .section-title,
 .portfolio .section-title {
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 @media screen and (min-width: 768px) {
   .section-title {
     font-size: 40px;
-    margin-bottom: 60px;
   }
   .team .section-title,
   .portfolio .section-title {
-    margin-bottom: 48px;
+    margin-bottom: 72px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .section-title {
     font-size: 44px;
-    margin-bottom: 72px;
   }
   .team .section-title,
   .portfolio .section-title {
-    margin-bottom: 48px;
+    margin-bottom: 72px;
   }
 }
 
@@ -442,9 +440,11 @@ button {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/hero/hero-desktop.jpg");
+    max-width: 1440px;
+    margin: 0 auto;
   }
   .hero-title {
-    max-width: 560px;
+    max-width: 520px;
     margin: 0 auto 50px;
     font-size: 56px;
     line-height: 1.08;
@@ -503,13 +503,13 @@ button {
 .adv-title {
   text-align: center;
   margin-bottom: 8px;
-  font-size: 30px;
+  font-size: 34px;
   line-height: 1.2;
   font-weight: 700;
 }
 
 .adv-text {
-  text-align: left;
+  text-align: center;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -518,15 +518,8 @@ button {
 
 @media screen and (min-width: 768px) {
   .adv-title {
-    font-size: 30px;
     text-align: left;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .adv-title {
-    text-align: left;
-    font-size: 30px;
+    font-size: 34px;
     font-weight: 700;
   }
 
@@ -806,15 +799,16 @@ button {
   display: flex;
   flex-direction: column;
   gap: 72px;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .footer-info {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  align-items: center;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .footer-social {
@@ -832,7 +826,7 @@ button {
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
     align-items: flex-start;
     text-align: left;
   }
@@ -851,6 +845,10 @@ button {
 
   .footer-text {
     max-width: 380px;
+  }
+
+  .footer-container {
+    row-gap: 72px;
   }
 
   .sub-form {
