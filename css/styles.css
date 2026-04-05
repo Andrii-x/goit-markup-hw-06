@@ -302,6 +302,7 @@ button {
 
 .mobile-menu-contacts {
   margin-top: auto;
+  margin-bottom: 40px;
 }
 
 .mobile-menu-social {
@@ -514,7 +515,7 @@ button {
     text-align: left;
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.11;
   }
 
   .adv-text {
@@ -832,7 +833,7 @@ button {
   .footer-container {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 72px;
     align-items: stretch;
     text-align: left;
   }
@@ -998,6 +999,7 @@ button {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 16px;
 }
 
 .sub-title {
