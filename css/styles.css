@@ -149,7 +149,7 @@ button {
 
 .logo {
   padding: 24px 0;
-  margin-right: 124px;
+  margin-right: 76px;
 }
 
 .header-nav {
@@ -865,10 +865,10 @@ button {
 
   .sub-box {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
-    gap: 12px;
+    gap: 16px;
   }
 
   .sub-title {
