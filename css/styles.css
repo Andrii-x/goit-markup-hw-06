@@ -149,7 +149,7 @@ button {
 
 .logo {
   padding: 24px 0;
-  margin-right: 76px;
+  margin-right: 124px;
 }
 
 .header-nav {
@@ -302,7 +302,7 @@ button {
 
 .mobile-menu-contacts {
   margin-top: auto;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 .mobile-menu-social {
@@ -528,7 +528,7 @@ button {
 
 @media screen and (min-width: 1158px) {
   .adv-title {
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -536,7 +536,7 @@ button {
   }
 
   .adv-text {
-    text-align: center;
+    text-align: left;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
