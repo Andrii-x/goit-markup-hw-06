@@ -107,22 +107,18 @@ button {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-  margin-right: 76px;
-  padding: 24px 0;
 }
-
-.logo-web {
-  color: #4d5ae5;
-}
-
-.logo-studio {
-  color: #ffffff;
-}
-
 .logo {
   padding: 16px 0;
   display: block;
   color: #4d5ae5;
+  margin-right: 0;
+}
+
+.footer-logo {
+  display: block;
+  padding: 0;
+  margin-right: 0;
 }
 
 .logo-span {
@@ -149,7 +145,7 @@ button {
 
 .logo {
   padding: 24px 0;
-  margin-right: 124px;
+  margin-right: 76px;
 }
 
 .header-nav {
@@ -213,8 +209,6 @@ button {
   color: #404bbf;
 }
 }
-
-
 @media screen and (min-width: 1158px) {
   .logo {
     margin-right: 76px;
