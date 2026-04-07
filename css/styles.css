@@ -145,7 +145,7 @@ button {
 
 .logo {
   padding: 24px 0;
-  margin-right: 76px;
+  margin-right: 200px;
 }
 
 .header-nav {
@@ -211,7 +211,7 @@ button {
 }
 @media screen and (min-width: 1158px) {
   .logo {
-    margin-right: 76px;
+    margin-right: 40px;
   }
   .contact-list {
     align-items: center;
@@ -830,6 +830,8 @@ button {
     gap: 72px;
     align-items: stretch;
     text-align: left;
+    max-width: 584px;
+    margin: 0 auto;
   }
 
   .footer-top {
@@ -838,6 +840,8 @@ button {
     align-items: flex-start;
     gap: 24px;
     width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
   }
 
   .footer-info {
@@ -911,7 +915,7 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 80px;
+    gap: 160px;
   }
 
   .footer-info {
