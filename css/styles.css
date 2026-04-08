@@ -145,7 +145,7 @@ button {
 
 .logo {
   padding: 24px 0;
-  margin-right: 200px;
+  margin-right: 120px;
 }
 
 .header-nav {
@@ -211,7 +211,7 @@ button {
 }
 @media screen and (min-width: 1158px) {
   .logo {
-    margin-right: 40px;
+    margin-right: 76px;
   }
   .contact-list {
     align-items: center;
