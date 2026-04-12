@@ -1,5 +1,3 @@
-
-
 body {
  font-family: "Roboto", sans-serif;
   margin: 0;
@@ -125,9 +123,11 @@ button {
   color: #000000;
 }
 
+.logo-studio {
+  color: white;
+}
+
 .burger-btn {
-  position: absolute;
-  right: 16px;
   background-color: transparent;
   border: none;
   padding: 0px;
@@ -258,6 +258,20 @@ button {
     position: absolute;
     right: 16px;
     top: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .mobile-menu-close svg {
+    display: block;
+    fill: #ffffff;
   }
 
   .mobile-menu-nav {
@@ -297,6 +311,11 @@ button {
 .mobile-menu-contacts {
   margin-top: auto;
   margin-bottom: 48px;
+  font-style: normal;
+}
+
+.mobile-menu-contacts a {
+  font-style: normal;
 }
 
 .mobile-menu-social {
@@ -317,7 +336,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/hero/hero-mobile.jpg");
+    url("../images/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -333,12 +352,7 @@ button {
   color: #ffffff;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
-  font-weight: 700;
-}
-
-.hero-btn {
-  margin-top: 72px;
+    letter-spacing: 0.02em;
 }
 
 @media screen and (min-width: 768px) {
@@ -349,7 +363,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero/hero-tablet.jpg");
+      url("../images/hero-mobile.jpg");
   }
 
   .hero-title {
@@ -388,7 +402,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero/hero-mobile@2x.jpg");
+      url("../images/hero-mobile.jpg");
   }
 }
 
@@ -398,11 +412,7 @@ button {
   font-weight: 700;
   line-height: 1.15;
   text-align: center;
-}
-
-.team .section-title,
-.portfolio .section-title {
-  margin-bottom: 72px;
+    color: #111827;
 }
 
 @media screen and (min-width: 768px) {
@@ -440,7 +450,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero/hero-tablet@2x.jpg");
+      url("../images/hero-mobile.jpg");
   }
 }
 @media screen and (min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1158px) and (min-resolution: 192dpi) {
@@ -450,7 +460,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero/hero-desktop@2x.jpg");
+      url("../images/hero-mobile.jpg");
   }
 }
 
@@ -468,6 +478,9 @@ button {
 .advantages {
   padding: 96px 0;
 }
+
+
+
 
 @media screen and (min-width: 768px) {
   .advantages {
@@ -569,6 +582,7 @@ button {
     background-color: #f4f4fd;
     border-radius: 4px;
     margin-bottom: 8px;
+    border: 1px solid #8e8f99;
   }
 
   .adv-title {
@@ -584,11 +598,11 @@ button {
 .team {
   padding: 96px 0;
   background-color: #f4f4fd;
+  letter-spacing: 0.02em;
 }
 
 .team-item {
   width: 264px;
-  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -645,6 +659,7 @@ button {
 
 .team-content {
   padding: 32px 0;
+  letter-spacing: 0.02em;
 }
 
 .social-list {
@@ -669,6 +684,7 @@ button {
 /* ========== PORTFOLIO ========== */
 .portfolio {
   padding: 96px 0;
+  letter-spacing: 0.02em;
 }
 
 @media screen and (min-width: 768px) {
@@ -739,6 +755,7 @@ button {
   padding: 40px 32px;
   transform: translateY(100%);
   transition: transform 250ms ease;
+  letter-spacing: 0.02em;
 }
 
 .footer .social-icon {
@@ -859,6 +876,7 @@ button {
 
   .footer-text {
     max-width: 280px;
+    margin-left: 16px;
   }
 
   .sub-box {
@@ -880,6 +898,7 @@ button {
     flex-direction: row;
     gap: 24px;
     align-items: center;
+    justify-content: flex-start;
     margin: 0;
     flex: 1 1 auto;
   }
@@ -891,13 +910,17 @@ button {
 
   .sub-btn {
     flex: 0 0 auto;
-
   }
 }
 
 @media screen and (min-width: 1158px) {
   .footer {
     padding: 100px 0;
+  }
+
+  .footer .container {
+    max-width: none;
+    padding: 0 80px;
   }
 
   .footer-container {
@@ -931,12 +954,14 @@ button {
   }
 
   .sub-box {
-    flex: 0 0 30%;
+    flex: 1 1 auto;
     margin-left: auto;
+    align-items: flex-start;
   }
 
   .footer-text {
     max-width: 360px;
+    margin-right: 16px;
   }
 
   .sub-form {
@@ -1004,30 +1029,41 @@ button {
   color: #f4f4fd;
   font-size: 16px;
   font-weight: 500;
-  margin: 0;
-  text-align: center;
+  margin: 0 ;
+  text-align: left;
 }
 
 .sub-form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 16px;
   align-items: center;
+  justify-content: center;
   margin: 0 auto;
+  width: 100%;
 }
 
 .sub-input {
-  width: 200px;
+  flex: 0 0 264px;
+  min-width: 0;
+  width: 100%;
+  max-width: 264px;
   height: 40px;
   border: 1px solid #f4f4fd;
   background: transparent;
   padding-left: 16px;
   color: #f4f4fd;
+  border-radius: 4px;
 }
 
 .sub-btn {
-  width: 120px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 155px;
   height: 40px;
+  padding: 0 40px;
   background-color: #4d5ae5;
   color: #f4f4fd;
   border: none;
@@ -1127,10 +1163,15 @@ button {
   padding: 0;
 }
 
+.input-wrapper:focus-within {
+  border-color: #4d5ae5;
+}
+
 .form-input {
   width: 100%;
   height: 40px;
   padding-left: 38px;
+  color: #111827;
 }
 
 .form-icon {
@@ -1138,6 +1179,11 @@ button {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  fill: #111827;
+}
+
+.input-wrapper:focus-within .form-icon {
+  fill: #4d5ae5;
 }
 
 .form-textarea {
@@ -1162,7 +1208,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-  margin-bottom: 16px;
+  margin: 40px 0 16px;
   color: #2e2f42;
 }
 
@@ -1189,7 +1235,7 @@ button {
   display: block;
   font-size: 12px;
   margin-bottom: 4px;
-  color: #eaecfd;
+  color: #111827;
 }
 
 .form-input:focus,
@@ -1202,6 +1248,29 @@ button {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  flex-wrap: wrap;
+}
+
+.checkbox-link {
+  color: #4d5ae5;
+  text-decoration: underline;
+}
+
+.checkbox-link:hover,
+.checkbox-link:focus {
+  color: #404bbf;
 }
 
 /* ===== SUBMIT BUTTON ===== */
