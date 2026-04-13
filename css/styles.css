@@ -415,6 +415,13 @@ button {
     color: #111827;
 }
 
+@media screen and (max-width: 767px) {
+  .team .section-title,
+  .portfolio .section-title {
+    margin-bottom: 72px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .section-title {
     font-size: 40px;
@@ -659,8 +666,22 @@ button {
 }
 
 .team-content {
-  padding: 32px 0;
+  padding: 32px 16px;
   letter-spacing: 0.02em;
+}
+
+.team-name {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #2e2f42;
+}
+
+.team-role {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #434455;
 }
 
 .social-list {
@@ -796,6 +817,24 @@ button {
 .portfolio-item:hover .portfolio-overlay {
   transform: translateY(0);
 }
+
+.portfolio-content {
+  padding: 32px 16px;
+}
+
+.portfolio-title {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #2e2f42;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #434455;
+}
 .footer {
   background-color: #2e2f42;
   padding: 96px 0;
@@ -888,10 +927,21 @@ button {
     gap: 16px;
   }
 
+  .sub-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 16px;
+  }
+
   .sub-title {
     text-align: left;
     margin: 0;
     white-space: nowrap;
+    color: #f4f4fd;
+    font-size: 16px;
+    font-weight: 500;
   }
 
   .sub-form {
@@ -902,6 +952,7 @@ button {
     justify-content: flex-start;
     margin: 0;
     flex: 1 1 auto;
+    width: 100%;
   }
 
   .sub-input {
@@ -958,6 +1009,17 @@ button {
     flex: 1 1 auto;
     margin-left: auto;
     align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .sub-title {
+    text-align: left;
+    color: #f4f4fd;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
   }
 
   .footer-text {
@@ -972,6 +1034,7 @@ button {
     align-items: center;
     margin: 0;
     flex: 1 1 auto;
+    width: 100%;
   }
 
   .sub-input {
@@ -1045,6 +1108,12 @@ button {
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .sub-form {
+    flex-direction: column;
+  }
+}
+
 .sub-input {
   flex: 0 0 264px;
   min-width: 0;
@@ -1069,6 +1138,12 @@ button {
   color: #f4f4fd;
   border: none;
   border-radius: 8px;
+}
+
+.sub-icon {
+  margin-left: 4px;
+  transform: translateX(3px);
+  fill: #ffffff;
 }
 
 .footer-text-row {
@@ -1261,7 +1336,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .checkbox-link {
