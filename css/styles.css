@@ -128,14 +128,18 @@ button {
 }
 
 .burger-btn {
-  background-color: transparent;
+  background-color: #8e8f99;
   border: none;
   padding: 0px;
+  width: 24px;
+  height: 24px;
 }
 
 .burger-icon {
     display: block;
-    fill: #2e2f37;
+    fill: #f1f1f1;
+    width: 24px;
+  height: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -259,10 +263,10 @@ button {
     position: absolute;
     right: 16px;
     top: 16px;
-    width: 48px;
-    height: 48px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
-    background-color: #4d5ae5;
+    background-color:#dad9d9;
     border: none;
     display: flex;
     align-items: center;
@@ -272,7 +276,6 @@ button {
 
   .mobile-menu-close svg {
     display: block;
-    fill: #ffffff;
   }
 
   .mobile-menu-nav {
@@ -487,9 +490,6 @@ button {
 .advantages {
   padding: 96px 0;
 }
-
-
-
 
 @media screen and (min-width: 768px) {
   .advantages {
@@ -1313,7 +1313,7 @@ button {
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color:#8e8f99;
+  color:#4d5ae5;
   flex-wrap: nowrap;
 }
 
