@@ -164,7 +164,8 @@ button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link.current {
-  position: relative; /* ✅ щоб псевдоелемент позиціювати відносно посилання */
+  position: relative;
+  color: #4d5ae5; /* ✅ щоб псевдоелемент позиціювати відносно посилання */
 }
 
 .nav-link.current::after {
@@ -336,7 +337,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/hero-mobile.jpg");
+    url("../images/hero-laptop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -349,6 +350,7 @@ button {
 .hero-title {
   max-width: 216px;
   margin: 0 auto 72px;
+  text-align: center;
   color: #ffffff;
   font-size: 36px;
   line-height: 1.11;
@@ -363,7 +365,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero-mobile.jpg");
+      url("../images/hero-tablet@2x.jpg");
   }
 
   .hero-title {
@@ -457,7 +459,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero-mobile@2x.jpg");
+      url("../images/hero-tablet@2x.jpg");
   }
 }
 @media screen and (min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1158px) and (min-resolution: 192dpi) {
@@ -467,7 +469,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero-mobile@2x.jpg");
+      url("../images/hero-laptop@2x.jpg");
   }
 }
 
@@ -820,6 +822,7 @@ button {
 
 .portfolio-content {
   padding: 32px 16px;
+  border: 1px solid #e7e9fe;
 }
 
 .portfolio-title {
@@ -866,6 +869,7 @@ button {
   gap: 16px;
   align-items: center;
   text-align: center;
+  margin-bottom: 72px;
 }
 
 .footer-social {
@@ -893,25 +897,20 @@ button {
 
   .footer-top {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
     gap: 24px;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
   }
 
   .footer-info {
-    flex: 0 0 55%;
     align-items: flex-start;
-    text-align: left;
+    margin-bottom: 0;
+    max-width: 264px;
   }
 
   .footer-social {
-    flex: 0 0 45%;
-    align-items: center;
+    
+    align-items: flex-start;
     justify-content: center;
-    text-align: center;
   }
 
   .footer-text {
@@ -923,7 +922,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
     gap: 16px;
   }
 
@@ -931,7 +929,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
     gap: 16px;
   }
 
@@ -971,8 +968,8 @@ button {
   }
 
   .footer .container {
-    max-width: none;
-    padding: 0 80px;
+    max-width: 1158px;
+    gap: 0;
   }
 
   .footer-container {
@@ -986,32 +983,19 @@ button {
   }
 
   .footer-top {
-    flex: 0 0 65%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 160px;
-  }
-
-  .footer-info {
-    flex: 0 0 45%;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .footer-social {
-    flex: 0 0 35%;
-    align-items: flex-start;
-    text-align: left;
+    gap: 120px;
   }
 
   .sub-box {
-    flex: 1 1 auto;
     margin-left: auto;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-bottom: 16px;
   }
 
   .sub-title {
@@ -1073,9 +1057,6 @@ button {
   margin: 0;
 }
 
-
-
-
 .footer-social-list {
   display: flex;
   gap: 16px;
@@ -1084,7 +1065,7 @@ button {
 .sub-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
   gap: 16px;
 }
@@ -1103,9 +1084,6 @@ button {
   flex-wrap: wrap;
   gap: 16px;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -1115,10 +1093,8 @@ button {
 }
 
 .sub-input {
-  flex: 0 0 264px;
   min-width: 0;
-  width: 100%;
-  max-width: 264px;
+  width: 264px;
   height: 40px;
   border: 1px solid #f4f4fd;
   background: transparent;
@@ -1130,10 +1106,11 @@ button {
 .sub-btn {
   display: inline-flex;
   align-items: center;
+  width: 164px;
   justify-content: center;
   min-width: 155px;
   height: 40px;
-  padding: 0 40px;
+  padding: 0 24px;
   background-color: #4d5ae5;
   color: #f4f4fd;
   border: none;
@@ -1234,8 +1211,6 @@ button {
 
 .input-wrapper {
   position: relative;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 8px;
   padding: 0;
 }
 
@@ -1248,6 +1223,7 @@ button {
   height: 40px;
   padding-left: 38px;
   color: #111827;
+  border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 .form-icon {
@@ -1265,6 +1241,8 @@ button {
 .form-textarea {
   width: 100%;
   height: 120px;
+  padding-top: 5px;
+  padding-left: 5px;
 }
 
 .modal-submit {
@@ -1322,7 +1300,7 @@ button {
 .checkbox-custom {
   width: 16px;
   height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(14, 25, 219, 0.911);
   border-radius: 2px;
   flex-shrink: 0;
   margin-top: 2px;
@@ -1335,7 +1313,7 @@ button {
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  color:#8e8f99;
   flex-wrap: nowrap;
 }
 
