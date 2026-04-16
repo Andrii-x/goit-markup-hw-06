@@ -128,18 +128,30 @@ button {
 }
 
 .burger-btn {
-  background-color: #8e8f99;
-  border: none;
-  padding: 0px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
   width: 24px;
   height: 24px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .burger-icon {
     display: block;
-    fill: #f1f1f1;
-    width: 24px;
-  height: 24px;
+    fill: #2e2f42;
+      top: 16px;
+  right: 16px;
+  width: 8px;
+  height: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1243,6 +1255,7 @@ button {
   height: 120px;
   padding-top: 5px;
   padding-left: 5px;
+  fill:#4d5ae5;
 }
 
 .modal-submit {
@@ -1290,6 +1303,8 @@ button {
   font-size: 12px;
   margin-bottom: 4px;
   color: #111827;
+  border-color: #4d5ae5;
+  margin-top: 16px;
 }
 
 .form-input:focus,
@@ -1300,21 +1315,20 @@ button {
 .checkbox-custom {
   width: 16px;
   height: 16px;
-  border: 1px solid rgba(14, 25, 219, 0.911);
+  border: 1px solid rgba(9, 9, 10, 0.911);
   border-radius: 2px;
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 5px;
 }
 
 .checkbox-label {
-  display: flex;
-  align-items: flex-start;
   gap: 8px;
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color:#4d5ae5;
+  color:#03040f;
   flex-wrap: nowrap;
+  margin-top: 18px;
 }
 
 .checkbox-link {
@@ -1338,4 +1352,5 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 24px;
 }
