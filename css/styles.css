@@ -131,27 +131,12 @@ button {
   position: absolute;
   top: 16px;
   right: 16px;
-
   width: 24px;
   height: 24px;
-  border-radius: 50%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
 }
 
 .burger-icon {
-    display: block;
-    fill: #2e2f42;
-      top: 16px;
-  right: 16px;
-  width: 8px;
-  height: 8px;
+  fill: #2e2f42;
 }
 
 @media screen and (min-width: 768px) {
@@ -352,7 +337,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/hero-laptop.jpg");
+    url("../images/hero-tablet.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -380,7 +365,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero-tablet@2x.jpg");
+      url("../images/hero-tablet1@2.jpg");
   }
 
   .hero-title {
@@ -419,7 +404,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero-mobile@2x.jpg");
+      url("../images/hero-mobile1@2x.jpg");
   }
 }
 
@@ -474,7 +459,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero-tablet@2x.jpg");
+      url("../images/hero-tablet2@2.jpg");
   }
 }
 @media screen and (min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1158px) and (min-resolution: 192dpi) {
@@ -484,7 +469,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero-laptop@2x.jpg");
+      url("../images/hero-laptop1@2x.jpg");
   }
 }
 
@@ -1322,7 +1307,6 @@ button {
 }
 
 .checkbox-label {
-  gap: 8px;
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
