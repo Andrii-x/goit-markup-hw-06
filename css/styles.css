@@ -128,6 +128,9 @@ button {
 }
 
 .burger-btn {
+  padding: 0;
+  border: none;
+  background: transparent;
   position: absolute;
   top: 16px;
   right: 16px;
@@ -365,7 +368,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero-tablet1@2.jpg");
+      url("../images/hero-tabletx1.jpg");
   }
 
   .hero-title {
